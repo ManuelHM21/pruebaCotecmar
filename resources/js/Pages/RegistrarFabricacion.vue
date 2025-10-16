@@ -242,8 +242,8 @@
     </Modal>
 
     <!-- Loader -->
-    <Loader 
-      :show="loaderState.show" 
+    <Loader
+      :show="loaderState.show"
       :type="loaderState.type"
       :message="loaderState.message"
       :submessage="loaderState.submessage"
@@ -413,7 +413,7 @@ const enviarRegistro = () => {
 
   procesando.value = true
   Object.keys(errores).forEach(k => delete errores[k])
-  
+
   // Activar loader
   loaderState.show = true
   loaderState.type = 'dots'

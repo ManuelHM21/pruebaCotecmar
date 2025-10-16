@@ -51,10 +51,10 @@ class ProyectoController extends Controller
             $proyecto->update($request->validated());
 
             DB::commit();
-            
+
             $usuario = Auth::check() ? Auth::user()->email : 'desconocido';
             Log::info("Proyecto actualizado: {$id}", ['usuario' => $usuario]);
-            
+
             return redirect()->route('proyectos.index')->with('success', 'Proyecto actualizado exitosamente.');
         } catch (\Exception $e) {
             DB::rollBack();
@@ -78,10 +78,10 @@ class ProyectoController extends Controller
             $proyecto->delete();
 
             DB::commit();
-            
+
             $usuario = Auth::check() ? Auth::user()->email : 'desconocido';
             Log::warning("Proyecto eliminado: {$id}", ['usuario' => $usuario]);
-            
+
             return redirect()->route('proyectos.index')->with('success', 'Proyecto eliminado exitosamente.');
         } catch (\Exception $e) {
             DB::rollBack();

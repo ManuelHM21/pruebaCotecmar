@@ -580,8 +580,8 @@
         </Modal>
 
         <!-- Loader -->
-        <Loader 
-            :show="loaderState.show" 
+        <Loader
+            :show="loaderState.show"
             :type="loaderState.type"
             :message="loaderState.message"
             :submessage="loaderState.submessage"
@@ -722,7 +722,7 @@ const enviarProyecto = () => {
     if (Object.keys(errores).length) return;
 
     procesando.value = true;
-    
+
     // Activar loader
     loaderState.show = true;
     loaderState.type = 'circle';
@@ -802,7 +802,7 @@ const cerrarModalEditar = () => {
 
 const actualizarProyecto = () => {
     procesandoModal.value = true;
-    
+
     // Activar loader
     loaderState.show = true;
     loaderState.type = 'spinner';
@@ -851,7 +851,7 @@ const cerrarModalEliminar = () => {
 
 const eliminarProyecto = () => {
     procesandoModal.value = true;
-    
+
     // Activar loader
     loaderState.show = true;
     loaderState.type = 'pulse';

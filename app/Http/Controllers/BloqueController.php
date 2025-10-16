@@ -71,10 +71,10 @@ class BloqueController extends Controller
             $bloque->update($request->validated());
 
             DB::commit();
-            
+
             $usuario = Auth::check() ? Auth::user()->email : 'desconocido';
             Log::info("Bloque actualizado: {$id}", ['usuario' => $usuario]);
-            
+
             return redirect()->route('bloques.index')->with('success', 'Bloque actualizado exitosamente.');
         } catch (\Exception $e) {
             DB::rollBack();
@@ -97,10 +97,10 @@ class BloqueController extends Controller
             $bloque->delete();
 
             DB::commit();
-            
+
             $usuario = Auth::check() ? Auth::user()->email : 'desconocido';
             Log::warning("Bloque eliminado: {$id}", ['usuario' => $usuario]);
-            
+
             return redirect()->route('bloques.index')->with('success', 'Bloque eliminado exitosamente.');
         } catch (\Exception $e) {
             DB::rollBack();
