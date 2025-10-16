@@ -1,3 +1,4 @@
+@import "tailwindcss-animated";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,3 +6,10 @@
 [x-cloak] {
     display: none;
 }
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+
+
