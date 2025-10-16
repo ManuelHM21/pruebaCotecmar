@@ -54,28 +54,28 @@ const logout = () => {
                             class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex"
                         >
                             <NavLink
-                                :href="route('peso-real')"
-                                :active="route().current('peso-real')"
-                            >
-                                Registro de Fabricación
-                            </NavLink>
-                            <NavLink
-                                :href="route('crear-pieza')"
-                                :active="route().current('crear-pieza')"
-                            >
-                                Registrar Pieza
-                            </NavLink>
-                            <NavLink
                                 :href="route('crear-proyecto')"
                                 :active="route().current('crear-proyecto')"
                             >
-                                Crear Proyecto
+                                1. Crear Proyecto
                             </NavLink>
                             <NavLink
                                 :href="route('crear-bloque')"
                                 :active="route().current('crear-bloque')"
                             >
-                                Crear Bloque
+                                2. Crear Bloque
+                            </NavLink>
+                            <NavLink
+                                :href="route('crear-pieza')"
+                                :active="route().current('crear-pieza')"
+                            >
+                                3. Registrar Pieza
+                            </NavLink>
+                            <NavLink
+                                :href="route('peso-real')"
+                                :active="route().current('peso-real')"
+                            >
+                                4. Registrar Fabricación
                             </NavLink>
                             <NavLink
                                 :href="route('reporte.pendientes')"
@@ -378,28 +378,28 @@ const logout = () => {
                             Dashboard
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
-                            :href="route('peso-real')"
-                            :active="route().current('peso-real')"
-                        >
-                            Registro de Fabricación
-                        </ResponsiveNavLink>
-                        <ResponsiveNavLink
-                            :href="route('crear-pieza')"
-                            :active="route().current('crear-pieza')"
-                        >
-                            Registrar Pieza
-                        </ResponsiveNavLink>
-                        <ResponsiveNavLink
                             :href="route('crear-proyecto')"
                             :active="route().current('crear-proyecto')"
                         >
-                            Crear Proyecto
+                            1. Crear Proyecto
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
                             :href="route('crear-bloque')"
                             :active="route().current('crear-bloque')"
                         >
-                            Crear Bloque
+                            2. Crear Bloque
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('crear-pieza')"
+                            :active="route().current('crear-pieza')"
+                        >
+                            3. Registrar Pieza
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('peso-real')"
+                            :active="route().current('peso-real')"
+                        >
+                            4. Registrar Fabricación
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
                             :href="route('reporte.pendientes')"
